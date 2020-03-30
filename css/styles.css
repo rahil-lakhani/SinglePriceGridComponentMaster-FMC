@@ -1,0 +1,177 @@
+
+/****** Default ******/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/***** Tags Selectors *****/
+
+a {
+    font-size: 85%;
+    font-weight: 550;
+    color: white;
+    text-decoration: solid;
+    vertical-align: unset;
+
+}
+
+body {
+    background-color: hsl(204, 43%, 93%);
+    font-family: 'Karla', sans-serif;
+    text-align: center;
+    padding: 0 20px;
+}
+
+p {
+    font-size: 70%;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+em {
+    color: #27496d;
+    font-weight: 700;
+}
+
+
+/***** Class Selectors *****/
+
+.wrapper {
+    background-color: white;
+    border-radius: 5px;
+    margin: 70px auto 50px auto;
+    max-width: 375px;
+}
+
+
+.container {
+    text-align: left;
+}
+
+.community {
+    padding: 2.5rem 2rem;
+}
+
+.community_h1 {
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+    font-size: 120%;
+    margin-bottom: 20px;
+}
+
+.community_h2 {
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+    font-size: 90%;
+    margin-bottom: 15px;
+}
+
+.community_h3 {
+    color: hsl(218, 22%, 67%);
+    font-weight: 400;
+    font-size: 82%;
+    line-height: 1.75;
+}
+
+.subscription {
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+    padding: 2.5rem 2rem;
+}
+
+.subscription_h1 {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 160%;
+    margin: auto 5px 10px auto;
+}
+
+.subscription_h2 {
+    font-weight: 550;
+    font-size: 100%;
+    margin-bottom: 15px
+}
+
+.subscription_h3 {
+    display: inline-block;
+    font-size: 70%;
+    font-weight: 400;
+    vertical-align: super;
+}
+
+.subscription_h3_full {
+    font-size: 75%;
+    font-weight: 400;
+    margin-bottom: 25px
+}
+
+.Sign_up {
+    background-color: hsl(71, 73%, 54%);
+    border-radius: 5px;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    width: auto;
+}
+
+.why {
+    background-color:#00cccc;
+    border-radius: 0 0 5px 5px;
+    color: white;
+    padding: 2.5rem 2rem;
+}
+
+.why_h2 {
+    font-weight: 550;
+    font-size: 100%;
+    margin-bottom: 20px
+}
+
+.attribution {
+    color: grey;
+    font-size: 0.75rem;
+    margin: 0 auto 0 auto ;
+}
+
+.attribution_a {
+    color: hsl(179, 62%, 43%);
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+/***** @media *****/
+
+@media (min-width:960px) {
+
+
+    .wrapper {
+        max-width: 1440px;
+        margin: 5rem 25rem 4rem 25rem;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:    "community community"
+                                "subscription why";
+    }
+
+    .community {
+        grid-area: community;
+    }
+
+    .subscription {
+        grid-area: subscription;
+        border-radius: 0 0 0 5px;
+    }
+
+    .why {
+        grid-area: why;
+        border-radius: 0 0 5px 0;
+    }
+
+}
